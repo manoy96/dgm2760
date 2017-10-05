@@ -23,7 +23,7 @@ header.appendChild(h_two);
 
 // JS insert current date
 var myDateString = new Date();
-document.getElementById("date").innerHTML = myDateString.toDateString();
+document.getElementById("date").innerHTML = "today is "+ myDateString.toDateString();
 
 
 //JS prompt user's name

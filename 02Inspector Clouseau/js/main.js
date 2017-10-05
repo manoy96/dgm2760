@@ -2,6 +2,22 @@
 /*jslint browser:true */
 "use strict";
 
+// var header = document.getElementById("header");
+
+// //JS adding HEADER
+// var joe = "Joe's Bed & Breakfast";
+// var h_one = document.createElement("h1");
+// h_one.innerHTML = joe;
+// header.appendChild(h_one);
+
+//JS display document title
+var title = document.getElementById("title");
+
+var inspector = "Inspector Clouseau";
+var h_one = document.createElement("h1");
+h_one.innerHTML = inspector;
+title.appendChild(h_one);
+
 //function to display window size
 function myWindowSize() {
 	var width = window.innerWidth;
