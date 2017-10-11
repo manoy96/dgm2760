@@ -30,7 +30,7 @@ console.log(collect);
 	}
 	else {
 		alert("hurray you are correct");
-	
+		getAward();
 		var output = document.createElement("p"); 
 		output.innerHTML = "Number of tries "+ collect;
 		document.getElementById("face").appendChild(output);
@@ -46,8 +46,9 @@ switch(collect) {
 	var pathToImage = "images/blue.png";
 	var awardImage = document.createElement("IMG");
 	awardImage.setAttribute('src', pathToImage);
-	console.log(awardImage);
+	document.getElementById("award").appendChild(awardImage);
 	break;
+	
 	case 4:
 	case 5:
 	case 6:
@@ -55,13 +56,18 @@ switch(collect) {
 	var awardImage = document.createElement("IMG");
 	awardImage.setAttribute('src', pathToImage);
 	console.log(awardImage);
+	document.getElementById("award").appendChild(awardImage);
 	break;
+
 	default:
 	var pathToImage = "images/green.png";
 	var awardImage = document.createElement("IMG");
 	awardImage.setAttribute('src', pathToImage);
 	console.log(awardImage);
+	document.getElementById("award").appendChild(awardImage);
 	break;
+
+
 } 
 
 }
