@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+}
+
+/* -----------------HEADER---------------*/
+header {
+	background-image: url("../images/flag.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	height:20%;
+
+}
+
+header h1 {
+	font-size: 72px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	padding:50px 50px 0px 50px;
+	text-align: center;
+
+
+	
+}
+
+header h2 {
+	font-size: 24px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	text-align: center;
+	padding-bottom: 50px;
+
+	
+}
+
+
+
+/* -- FOOTER STYLESHEET ---*/
+footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #040D3F;
+
+
+}
+
+/* --  CONTENT FOR THIS PAGE STYLESHEET ---*/
+#content {
+	width: 1024px;
+	margin: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+	font-family: Tahoma, Geneva, sans-serif;
+	word-wrap: break-word;
+}
+
+#content h1 {
+	font-size: 36px;
+	font-family: Tahoma, Geneva, sans-serif;
+
+}
+
+ul.objective {
+	list-style: circle;
+	padding-left: 40px;
+
+}
+
+#page {
+	font-size: 36px;
+}
+
+#title {
+	font-size: 36px;
+	font-family: Tahoma, Geneva, sans-serif;
+
+}
+
+
+
+
+/*------------------OTHER----------------------*/
+.keepOpen{
+	clear: both;
+}
+
+
