@@ -7,16 +7,18 @@
 
 /* -----------------HEADER---------------*/
 header {
-	background-image: url("../images/flag.jpg");
+	background-image: url(../images/stone.jpg);
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top center;
+	float:center;
 	width: 100%;
-	height:20%;
-
+	height: 200px;
 }
 
-header h1 {
+div.hero {
+	float: left;
+}
+
+div.hero h1 {
 	font-size: 72px;
 	font-family: Tahoma, Geneva, sans-serif;
 	color: white;
@@ -27,7 +29,7 @@ header h1 {
 	
 }
 
-header h2 {
+div.hero h2 {
 	font-size: 24px;
 	font-family: Tahoma, Geneva, sans-serif;
 	color: white;
@@ -36,11 +38,24 @@ header h2 {
 
 	
 }
+#overlay {
 
+	overflow: hidden;
+	background: rgba(0, 0, 0, .90);
+	z-index: 2;
+}
 
+.wrapper {
+    background: rgba(0, 0, 0, 0.55);
+    background-size: cover;
+    margin: 0;
+    min-height: 250px;
+}
 
 /* -- FOOTER STYLESHEET ---*/
 footer {
+	max-width: 960px;
+	min-width: 320px;
 	font-family: Tahoma, Geneva, sans-serif;
 	color: white;
 	width: 100%;
@@ -53,8 +68,24 @@ footer {
 
 }
 
+
+/*-- CONTAINER ---*/
+#container {
+	max-width: 960px;
+	min-width: 320px;
+	margin: auto;
+	border: 1px solid black;
+}
+/*-- BODY--*/
+body {
+background-color: #3b5d93; 
+}
+
 /* --  CONTENT FOR THIS PAGE STYLESHEET ---*/
 #content {
+	max-width: 960px;
+	min-width: 320px;
+	background-color: #fff;
 	width: 1024px;
 	margin: auto;
 	padding-left: 16px;
@@ -94,3 +125,12 @@ ul.objective {
 }
 
 
+/*---------------INPUTS/BUTTONS-------------*/
+#userInput {
+	width: 10em;
+	height: 30px;
+}
+button {
+	width: 10em;
+	height: 25px;
+}

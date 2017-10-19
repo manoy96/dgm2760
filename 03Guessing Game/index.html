@@ -9,22 +9,50 @@
 	</head>
 
 <body>
-	<h1>Adding an Image</h1>
+<div id="container">
+	<header> 
+		<div id="overlay"></div>
+			<div class="keepOpen"></div>
 
-	<div id="face">This is a face</div>
 
-<input id="userInput" type="text" name="Random Number" placeholder="Value 1-15">
+			<div class="hero">
+				<h1>Guessing game</h1>
+				<h2>Pick a Number</h2>
+			</div>
+			<div class="wrapper"></div>
+			
+		</header>
+<main>
+<div id="content">
+
+<h1> Let's see if you can guess a number</h1>
 <br>
+	<input id="userInput" type="text" name="Random Number" placeholder="Value 1-15">
+	<br>
+		<button onclick="guessFunction()">Guess</button>
+		<br>
+		<br>
+<h2>Skills Demonstrated</h2>
+<br>
+			<ul class="objective">
+				<li>I have discovered how use switches</li>
+				<li>I have found good use of the appendChild utility</li>
+				<li>I have found use in creating random values</li>
+				<li>I was able to get more practice with injecting information using JS</li>
+				
+			</ul>
+			<br>
 
-<button onclick="guessFunction()">
-	Click Me
-</button>
+	<div id="face"></div>
+
 <div id="award"></div>
 
-
+</div>
+</main>
 <footer>
 	<p> &copy; 2017 &bull; Manuel Espinoza &bull; DGM 2760 </p>
 </footer>
+</div>
 </body>
 <script type="text/javascript" src="js/main.js"></script>
 </html>
