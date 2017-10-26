@@ -4,75 +4,74 @@
 
 function generateRandom(top) {
 
-	var x = Math.random();
-	var y = Math.random();
-	x = x * 10;
-	x = (Math.floor(x)) + 3;
-	y = y * 10;
-	y = (Math.floor(y)) + 21;
-
-monthRand(x, y);
+	var x = Math.floor(Math.random()*(top-1))+1;
+	return x;
 
 }
 
 
-function Display() {
-
+function Display(msg) {
+var userOutput = randFortune();
+userOutput += " " + msg;
+document.getElementById("feedback").innerHTML = userOutput;
 
 }
 
 
-function monthRand(x, y) {
+function monthRand() {
+	var numDays = generateRandom(31);
+	var numMonth = generateRandom(12);
+ 
 
 	var msg;
-	switch(x){
+	switch(numMonth) {
 
 		case 1:
-		msg = "Jan " + y;
+		msg = "Jan " + numDays;
 		break;
 
 		case 2:
-		msg = "Feb " + y;
+		msg = "Feb " + numDays;
 		break;
 
 		case 3:
-		msg = "Mar " + y;
+		msg = "Mar " + numDays;
 		break;
 
 		case 4:
-		msg = "Apr " + y;
+		msg = "Apr " + numDays;
 		break;
 
 		case 5:
-		msg = "May " + y;
+		msg = "May " + numDays;
 		break;
 
 		case 6:
-		msg = "Jun " + y;
+		msg = "Jun " + numDays;
 		break;
 
 		case 7:
-		msg = "Jul " + y;
+		msg = "Jul " + numDays;
 		break;
 
 		case 8:
-		msg = "Aug " + y;
+		msg = "Aug " + numDays;
 		break;
 
 		case 9:
-		msg = "Sep " + y;
+		msg = "Sep " + numDays;
 		break;
 
 		case 10:
-		msg = "Oct " + y;
+		msg = "Oct " + numDays;
 		break;
 
 		case 11:
-		msg = "Nov " + y;
+		msg = "Nov " + numDays;
 		break;
 
 		case 12:
-		msg = "Dec " + y;
+		msg = "Dec " + numDays;
 		break;
 
 		default:
@@ -81,43 +80,48 @@ function monthRand(x, y) {
 
 }// end of switch
 	// return msg;
-
 Display(msg);
 }// end of function
 
 
-// var monthType = generateRandom(12);
-// var dayType = generateRandom(30);
-
-var homeKind = getHome(monthType);
 
 
 
-var feedbackMessage = "You will die on " + homeKind + " "+ dayType; 
-document.getElementById("feedback").innerHTML = feedbackMessage;
+// var feedbackMessage = "You will die on " + homeKind + " "+ dayType; 
+// document.getElementById("feedback").innerHTML = feedbackMessage;
 
 
 function randFortune() {
 
+var switchCase = generateRandom(6);
 var fort;
 
-switch(fort)
+switch(switchCase)
 {
 
 case 1:
 fort = "You will find love on ";
+break;
 
 case 2:
 fort = "You will die on ";
+break;
 
 case 3:
 fort = "You will find a large amount of case on ";
+break;
 
 case 4:
 fort = "You will be critially injured on ";
+break;
  
 case 5: 
 fort = "You will meet a celebrity on ";
+break;
+
+case 6:
+fort = "You be struck by lightning on ";
+break;
 
 default:
 fort = "Message intercepted by flying monkeys"
@@ -181,7 +185,7 @@ fort = "Message intercepted by flying monkeys"
 // 		alert("too low");
 // 	}
 // 	else {
-// 		alert("hurray you are correct");
+// 		alert("hurraynumDaysou are correct");
 // 		getAward();
 // 		var output = document.createElement("p"); 
 // 		output.innerHTML = "Number of tries "+ collect;
