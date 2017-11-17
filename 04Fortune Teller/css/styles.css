@@ -4,7 +4,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	text-align: left;
 	font: 12px Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #061C37;
@@ -12,10 +11,10 @@ body {
 
 	background-repeat:repeat-x;
 }
-*
+/**
 {
   margin: 0 auto 0 auto;
- text-align:left;}
+ text-align:left;}*/
 
 #container
 {
@@ -51,7 +50,7 @@ top:100px;
 
 #content
 {
-width:960px;
+/*width:960px;*/
 height:auto;
 background-color:#FFF;
 padding-left:10px;
@@ -74,21 +73,24 @@ float:left;
 clear:both;
 }
 
+/*---------------------------
+FOOTER
+-----------------------------*/
 
-
-#footer
-{
-width:inherit;
-height:auto;
+footer {
+	max-width: 960px;
+	min-width: 320px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #040D3F;
 }
-
-#footer h3 a,#footer h3 a:visited
-{
-display:inline;
-text-align:center;
-font-size:12px;
-text-decoration:none;
-color:#7198E1;
+footer p {
+	text-align: center;
 }
 
 
@@ -124,13 +126,7 @@ color:#7198E1;
 	background: url(file:///C|/Users/manuel/AppData/Local/Temp/Temp1_nightbeach.zip/nightbeach/images/menuhov.jpg) no-repeat;
 }
 
-#content p
-{
-	
-}
 
 
-html, body {
-text-align: center;
-}
+
 p {text-align: left;}

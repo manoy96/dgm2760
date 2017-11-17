@@ -16,7 +16,7 @@ function displayArray() {
 console.log("second");
 		myString += treeArray[i] + "<br>";
 	}
-	myString += "My array is " + treeArray.length + " elements long";
+	myString += "<br>My array is " + treeArray.length + " elements long";
 		document.getElementById("Display").innerHTML = myString;
 }// end of dispArray function
 

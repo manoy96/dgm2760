@@ -20,7 +20,7 @@ var pizza = {
 		pizza.flourAmt = " 2 cups of flour";
 		}
 
-		var shopText = "To bake this pizza we will need "+pizza.flourAmt+" and "+pizza.toppingType+".";
+		var shopText = "To bake this pizza we will need "+pizza.flourAmt+" and 1 pound of "+pizza.toppingType+".";
 		document.getElementById("feedback").innerHTML = shopText;
 
 	}//end of method
