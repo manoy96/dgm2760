@@ -1,0 +1,23 @@
+[   {
+    "name":"Presidential Suite",
+    "description":" Our upscale Washington, DC hotel offers a newly transformed lobby—part cocktail lounge, part wireless workspace and M Club, with exclusive 24-hour access, it has never be easier to turn business into leisure.",
+    "cost":{"weekend":"$350.00", "weekday":"$200.00"},
+    "details":["Fitness Center","Kitchen","Meeting Event Space","Guest Room"],
+    "photo":"images/serenade.jpg"
+    },
+    {
+    "name":"Midnight Paradise",
+    "description":"Each room offers a large work desk with ergonomic chair free wifi flat screen tvs mini fridge and a laptop compatible safe for your belongings.",
+    "cost":{"weekend":"$240.00", "weekday":"$132.00"},
+    "details":["Free Breakfast","Game Room","Indoor Pool","Fitness Center"],
+    "photo":"images/escape.jpg"
+    },
+    {
+    "name":"The Getaway",
+    "description":"The twenty-five story Victorian Renaissance hotel has 556 guestrooms and suites featuring the best in rich and opulent lifestyles with fine dining and luxuries. The exterior features a pitch copper roof and a decorative frieze at both the eight and tenth floors.",
+    "cost":{"weekend":"$129.00", "weekday":"$88.00"},
+    "details":["Free Internet","Posturepedic Bed","Flat Screen TV"],
+    "photo":"images/sandy.jpg"
+    }
+]
+
